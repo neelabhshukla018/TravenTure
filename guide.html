@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Traventure - Tours & Travel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tours & Travel" name="keywords">
+    <meta content="Tours & Travel" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-16x16.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <!-- Font Awesome v6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <script src="https://kit.fontawesome.com/c44dbc2ee4.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .destination-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 6px solid #28623a;
+        }
+        
+        .package-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 6px solid #ca763a;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+            /* box-shadow: 2 5px 15px rgba(0, 0, 0, 0.1); */
+            box-shadow: 2px 0px 0px #a1d1b1;
+        }
+        
+        .package-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .package-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .package-item .p-4 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .package-item a.h5 {
+            display: block;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #333;
+            min-height: 60px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .package-item a.h5:hover {
+            color: #007bff;
+        }
+        
+        .package-item .border-top {
+            margin-top: auto;
+        }
+        
+        .package-item h6,
+        .package-item h5 {
+            margin: 0;
+        }
+        
+        .custom-navbar {
+            background-color: #e7deba !important;
+            /* Golden shade */
+            width: 100%;
+            border: 8px solid #d1b566;
+            border-radius: 6px;
+            font-size: large;
+            box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.4), /* deeper bottom-right shadow */
+            inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+            /* brighter top-left highlight */
+        }
+        
+        .custom-navbar :hover {
+            color: crimson;
+        }
+        
+        .custom-topbar {
+            background-color: #000000 !important;
+            /* Dark golden/blackish background */
+            box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.4), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+        }
+        
+        .blog-item {
+            border: 3px solid #000000;
+            /* Subtle golden border */
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2), /* inner shadow for pressed look */
+            inset -3px -3px 6px rgba(255, 255, 255, 0.6);
+            /* top-left light source */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Optional: add slight lift on hover */
+        
+        .blog-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 5px 2px 2px #007bff;
+            box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.15);
+            /* subtle outer shadow on hover */
+        }
+        
+        .team-item {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .team-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-img {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            /* Fixed height */
+        }
+        
+        .team-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Prevents distortion */
+            display: block;
+        }
+        
+        .team-social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .team-img:hover .team-social {
+            opacity: 1;
+        }
+        
+        .team-social a {
+            margin: 0 5px;
+        }
+        /* Footer Styling */
+        
+        .footer {
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+            color: #bbb;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer h5,
+        .footer h6 {
+            color: #00fe94;
+            margin: right 50px;
+            padding-left: 0px;
+        }
+        /* Footer Links */
+        
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .footer a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00eeff;
+        }
+        /* Social Icons */
+        
+        .footer .social-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #00d4ff;
+            border-radius: 50%;
+            margin-right: 10px;
+            color: #00d4ff;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .footer .social-icon:hover {
+            background: #00d4ff;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #00d4ff;
+        }
+        /* Animation */
+        
+        .footer .footer-col {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease forwards;
+        }
+        
+        .footer .footer-col:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        
+        .footer .footer-col:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        
+        .footer .footer-col:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        
+        .footer .footer-col:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Newsletter Input */
+        
+        .footer .form-control {
+            border: none;
+            padding: 15px;
+            border-radius: 0;
+        }
+        
+        .footer .btn-primary {
+            background: #00d4ff;
+            border: none;
+            padding: 12px 20px;
+            color: #000;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .footer .btn-primary:hover {
+            background: #00a3cc;
+            color: #fff;
+            box-shadow: 0 0 25px #00a3cc;
+        }
+        /* Bottom Bar */
+        
+        .footer-bottom {
+            border-top: 3px solid rgba(148, 131, 131, 0.953);
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+            color: #998c8c;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid custom-topbar pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p class="text-white"><i class="fa fa-envelope mr-2"></i>neelabhshukla79@gmail.com</p>
+                        <p class="text-white px-3">|</p>
+                        <p class="text-white"><i class="fa fa-phone-alt mr-2"></i>+91-7307551612</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                      <a class="text-primary px-2" href="https://x.com/Neelabh01845" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                         <a class="text-primary px-2" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                         <a class="text-primary px-2" href="https://www.instagram.com/arjun_dream_1845/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg custom-navbar navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRAVE</span>NTURE</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="destination.html" class="dropdown-item">Destination</a>
+                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Guides</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Guides</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+   
+
+
+       <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Guides</h6>
+                <h1>Our Travel Guides</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href="https://x.com/Neelabh01845"><i class="fab fa-twitter" target="_blank"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/arjun_dream_1845/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/neelabh18shukla/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Amelia Thompson</h5>
+                            <p class="m-0">🧳 Operations Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href="https://x.com/Neelabh01845"><i class="fab fa-twitter" target="_blank"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/arjun_dream_1845/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/neelabh18shukla/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">James Whitmore</h5>
+                            <p class="m-0">🌍 Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href="https://x.com/Neelabh01845"><i class="fab fa-twitter" target="_blank"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/arjun_dream_1845/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/neelabh18shukla/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Oliver Bennett</h5>
+                            <p class="m-0">💼 Business Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href="https://x.com/Neelabh01845"><i class="fab fa-twitter" target="_blank"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/arjun_dream_1845/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/neelabh18shukla/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Charlotte Smith</h5>
+                            <p class="m-0">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h1 class="text-primary"><span class="text-white">TRAVE</span>NTURE</h1>
+                    <p>Traventure is the spirit of discovering the world beyond maps — where every journey becomes an adventure.</p>
+                    <h6 class="mt-4">Follow Us</h6>
+                    <div>
+                        <a class="social-icon" href="https://github.com/neelabhshukla018" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/profile.php?id=61575832483919" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/neelabh-shukla-45b88a2a5/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="destination.html">Destination</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="package.html">Packages</a></li>
+                        <li><a href="guide.html">Guides</a></li>
+                        <li><a href="testimonial.html">Testimonial</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="destination.html">Destination</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="package.html">Packages</a></li>
+                        <li><a href="guide.html">Guides</a></li>
+                        <li><a href="testimonial.html">Testimonial</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i> Sarojini Nagar, New Delhi, India</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i> +91-7307551612</p>
+                    <p><i class="fa fa-envelope mr-2"></i> neelabhshukla79@gmail.com</p>
+                    <h6 class="mt-4">Newsletter</h6>
+                    <form action="newsletter_sub.php" method="post">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© 2025 <a href="#">Traventure</a> | Designed by <a href="#">Neelabh Shukla</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
