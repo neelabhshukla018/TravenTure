@@ -23,13 +23,13 @@
 ## 🌍 Some Glimpses of Traventure
 
 <p align="center"> 
-  <img src="https://github.com/username/repo/blob/main/img1.png?raw=true" width="400" /> 
-  <img src="https://github.com/username/repo/blob/main/img2.png?raw=true" width="400" />
+  <img src="https://github.com/username/repo/blob/main/img/img1.png?raw=true" width="400" /> 
+  <img src="https://github.com/username/repo/blob/main/img/img2.png?raw=true" width="400" />
   <br><br>
-  <img src="https://github.com/username/repo/blob/main/img3.png?raw=true" width="400" /> 
-  <img src="https://github.com/username/repo/blob/main/img4.png?raw=true" width="400" />
+  <img src="https://github.com/username/repo/blob/main/img/img3.png?raw=true" width="400" /> 
+  <img src="https://github.com/username/repo/blob/main/img/img4.png?raw=true" width="400" />
   <br><br>
-  <img src="https://github.com/username/repo/blob/main/img5.png?raw=true" width="600" /> 
+  <img src="https://github.com/username/repo/blob/main/img/img5.png?raw=true" width="600" /> 
 </p>
 
 
