@@ -22,7 +22,7 @@
 
 
 ##Some Glimpses of Traventure-
-<p align="center"> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105024.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105036.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105049.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105058.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105121.png?raw=true" width="600" /> </p>
+<p align="center"> <img src="https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105024.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105036.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105049.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105049.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105049.png?raw=true" width="600" /> </p>
 
 
 ## 🚀 Why I Built Traventure  
@@ -138,7 +138,8 @@ Meet our **expert travel guides** 🌟
 
 ---
 
-## 📂 Project Structure – Traventure  
+## 📂 Project Structure – Traventure
+
 TRAVENTURE
 ├── 📂 css
 │   ├── style.css
@@ -148,104 +149,57 @@ TRAVENTURE
 │   ├── 📂 About
 │   │   ├── about-1.jpg
 │   │   ├── about-2.jpg
-│   │   ├── About-bg.jpg
-│   │   └── about-us-main.jpg
+│   │   ├── about-bg.jpg
+│   │   └── about-us.png
 │   │
-│   ├── 📂 Blogs
-│   │   ├── Blog-1.jpg
-│   │   ├── Blog-2.jpg
-│   │   ├── Blog-3.jpg
-│   │   ├── Blog-4.jpg
-│   │   └── Blog-5.jpg
+│   ├── 📂 Blog
+│   │   ├── blog-1.jpg
+│   │   ├── blog-2.jpg
+│   │   ├── blog-3.jpg
+│   │   └── blog-bg.jpg
 │   │
-│   ├── 📂 BlogSec
-│   │   ├── recentpost-1 (2).jpg
-│   │   ├── recentpost-2.jpg
-│   │   ├── recentpost-3.jpg
-│   │   └── team-1.jpg
+│   ├── 📂 Destination
+│   │   ├── destination-1.jpg
+│   │   ├── destination-2.jpg
+│   │   ├── destination-3.jpg
+│   │   └── destination-bg.jpg
 │   │
-│   ├── 📂 Destinations
-│   │   ├── 100.jpg
-│   │   └── 10000.jpg
+│   ├── 📂 Gallery
+│   │   ├── gallery-1.jpg
+│   │   ├── gallery-2.jpg
+│   │   ├── gallery-3.jpg
+│   │   └── gallery-bg.jpg
 │   │
-│   ├── about.jpg
-│   ├── blog-100x100.jpg
-│   ├── carousel-1.jpg
-│   ├── carousel-2.jpg
-│   ├── favicon-16x16.png
-│   ├── package-1.jpg
-│   ├── package-2.jpg
-│   ├── package-3.jpg
-│   ├── package-4.jpg
-│   ├── package-5.jpg
-│   ├── package-6.jpg
-│   ├── pexels-photo-457882.jpeg
-│   ├── team-2.jpg
-│   ├── team-3.jpg
-│   ├── team-4.jpg
-│   ├── testimonial-1.jpg
-│   ├── testimonial-2.jpg
-│   └── testimonial-3.jpg
+│   ├── 📂 Team
+│   │   ├── team-1.jpg
+│   │   ├── team-2.jpg
+│   │   ├── team-3.jpg
+│   │   └── team-bg.jpg
+│   │
+│   ├── 📂 Testimonial
+│   │   ├── testi-1.jpg
+│   │   ├── testi-2.jpg
+│   │   └── testi-bg.jpg
+│   │
+│   └── logo.png
 │
 ├── 📂 js
-│   └── main.js
+│   ├── main.js
+│   └── script.js
 │
-├── 📂 lib
-│   ├── 📂 easing
-│   │   ├── easing.js
-│   │   └── easing.min.js
-│   │
-│   ├── 📂 owlcarousel
-│   │   └── (carousel files here)
-│   │
-│   ├── 📂 tempusdominus
-│   │   ├── 📂 css
-│   │   │   ├── tempusdominus-bootstrap-4.css
-│   │   │   └── tempusdominus-bootstrap-4.min.css
-│   │   └── 📂 js
-│   │       ├── moment-timezone.min.js
-│   │       ├── moment.min.js
-│   │       ├── tempusdominus-bootstrap-4.js
-│   │       └── tempusdominus-bootstrap-4.min.js
+├── 📂 fonts
+│   ├── fontawesome-webfont.woff
+│   ├── fontawesome-webfont.ttf
+│   └── fontawesome-webfont.svg
 │
-├── 📂 scss
-│   ├── 📂 bootstrap\scss
-│   │   ├── 📂 mixins
-│   │   │   ├── _alert.scss
-│   │   │   ├── _background-variant.scss
-│   │   │   ├── _badge.scss
-│   │   │   ├── _border-radius.scss
-│   │   │   ├── _box-shadow.scss
-│   │   │   └── ... (other mixins)
-│   │   │
-│   │   ├── 📂 utilities
-│   │   │   ├── _align.scss
-│   │   │   ├── _background.scss
-│   │   │   ├── _borders.scss
-│   │   │   └── ... (other utilities)
-│   │   │
-│   │   ├── 📂 vendor
-│   │   │   ├── _rfs.scss
-│   │   │   ├── _alert.scss
-│   │   │   ├── _breadcrumb.scss
-│   │   │   └── ... (other vendor files)
-│   │   │
-│   │   ├── bootstrap-grid.scss
-│   │   ├── bootstrap-reboot.scss
-│   │   └── bootstrap.scss
-│   │
-│   └── style.scss
-│
+├── index.html
 ├── about.html
 ├── blog.html
-├── contact.html
 ├── destination.html
-├── guide.html
-├── index.html
-├── package.html
-├── service.html
-├── single.html
-└── testimonial.html
+├── gallery.html
+├── team.html
+├── testimonial.html
+└── contact.html
 
 
 
