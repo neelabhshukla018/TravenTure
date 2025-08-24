@@ -22,11 +22,7 @@
 
 
 ##Some Glimpses of Traventure-
-(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105024.png?raw=true)
-(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105036.png?raw=true)
-(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105049.png?raw=true)
-(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105058.png?raw=true)
-(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105121.png?raw=true)
+<p align="center"> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105024.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105036.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105049.png?raw=true" width="400" /> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105058.png?raw=true" width="400" /><br><br> <img src="https://github.com/username/repo/blob/main/Screenshot%202025-08-24%20105121.png?raw=true" width="600" /> </p>
 
 
 ## 🚀 Why I Built Traventure  
@@ -143,102 +139,102 @@ Meet our **expert travel guides** 🌟
 ---
 
 ## 📂 Project Structure – Traventure  
-
 TRAVENTURE
 ├── 📂 css
-│ ├── style.css
-│ └── style.min.css
+│   ├── style.css
+│   └── style.min.css
 │
 ├── 📂 img
-│ ├── 📂 About
-│ │ ├── about-1.jpg
-│ │ ├── about-2.jpg
-│ │ ├── About-bg.jpg
-│ │ └── about-us-main.jpg
-│ │
-│ ├── 📂 Blogs
-│ │ ├── Blog-1.jpg
-│ │ ├── Blog-2.jpg
-│ │ ├── Blog-3.jpg
-│ │ ├── Blog-4.jpg
-│ │ └── Blog-5.jpg
-│ │
-│ ├── 📂 BLOGSEc
-│ │ ├── recentpost-1 (2).jpg
-│ │ ├── recentpost-2.jpg
-│ │ ├── recentpost-3.jpg
-│ │ └── team-1.jpg
-│ │
-│ ├── 📂 Destinations
-│ │ ├── 100.jpg
-│ │ └── 10000.jpg
-│ │
-│ ├── about.jpg
-│ ├── blog-100x100.jpg
-│ ├── carousel-1.jpg
-│ ├── carousel-2.jpg
-│ ├── favicon-16x16.png
-│ ├── package-1.jpg
-│ ├── package-2.jpg
-│ ├── package-3.jpg
-│ ├── package-4.jpg
-│ ├── package-5.jpg
-│ ├── package-6.jpg
-│ ├── pexels-photo-457882.jpeg
-│ ├── team-2.jpg
-│ ├── team-3.jpg
-│ ├── team-4.jpg
-│ ├── testimonial-1.jpg
-│ ├── testimonial-2.jpg
-│ └── testimonial-3.jpg
+│   ├── 📂 About
+│   │   ├── about-1.jpg
+│   │   ├── about-2.jpg
+│   │   ├── About-bg.jpg
+│   │   └── about-us-main.jpg
+│   │
+│   ├── 📂 Blogs
+│   │   ├── Blog-1.jpg
+│   │   ├── Blog-2.jpg
+│   │   ├── Blog-3.jpg
+│   │   ├── Blog-4.jpg
+│   │   └── Blog-5.jpg
+│   │
+│   ├── 📂 BlogSec
+│   │   ├── recentpost-1 (2).jpg
+│   │   ├── recentpost-2.jpg
+│   │   ├── recentpost-3.jpg
+│   │   └── team-1.jpg
+│   │
+│   ├── 📂 Destinations
+│   │   ├── 100.jpg
+│   │   └── 10000.jpg
+│   │
+│   ├── about.jpg
+│   ├── blog-100x100.jpg
+│   ├── carousel-1.jpg
+│   ├── carousel-2.jpg
+│   ├── favicon-16x16.png
+│   ├── package-1.jpg
+│   ├── package-2.jpg
+│   ├── package-3.jpg
+│   ├── package-4.jpg
+│   ├── package-5.jpg
+│   ├── package-6.jpg
+│   ├── pexels-photo-457882.jpeg
+│   ├── team-2.jpg
+│   ├── team-3.jpg
+│   ├── team-4.jpg
+│   ├── testimonial-1.jpg
+│   ├── testimonial-2.jpg
+│   └── testimonial-3.jpg
 │
 ├── 📂 js
-│ └── main.js
+│   └── main.js
 │
 ├── 📂 lib
-│ ├── 📂 easing
-│ │ ├── easing.js
-│ │ └── easing.min.js
-│ │
-│ ├── 📂 owlcarousel
-│ │
-│ ├── 📂 tempusdominus
-│ │ ├── 📂 css
-│ │ │ ├── tempusdominus-bootstrap-4.css
-│ │ │ └── tempusdominus-bootstrap-4.min.css
-│ │ └── 📂 js
-│ │ ├── moment-timezone.min.js
-│ │ ├── moment.min.js
-│ │ ├── tempusdominus-bootstrap-4.js
-│ │ └── tempusdominus-bootstrap-4.min.js
+│   ├── 📂 easing
+│   │   ├── easing.js
+│   │   └── easing.min.js
+│   │
+│   ├── 📂 owlcarousel
+│   │   └── (carousel files here)
+│   │
+│   ├── 📂 tempusdominus
+│   │   ├── 📂 css
+│   │   │   ├── tempusdominus-bootstrap-4.css
+│   │   │   └── tempusdominus-bootstrap-4.min.css
+│   │   └── 📂 js
+│   │       ├── moment-timezone.min.js
+│   │       ├── moment.min.js
+│   │       ├── tempusdominus-bootstrap-4.js
+│   │       └── tempusdominus-bootstrap-4.min.js
 │
 ├── 📂 scss
-│ ├── 📂 bootstrap\scss
-│ │ ├── 📂 mixins
-│ │ │ ├── _alert.scss
-│ │ │ ├── _background-variant.scss
-│ │ │ ├── _badge.scss
-│ │ │ ├── _border-radius.scss
-│ │ │ ├── _box-shadow.scss
-│ │ │ ├── ... (other mixins)
-│ │ │
-│ │ ├── 📂 utilities
-│ │ │ ├── _align.scss
-│ │ │ ├── _background.scss
-│ │ │ ├── _borders.scss
-│ │ │ ├── ... (other utilities)
-│ │ │
-│ │ ├── 📂 vendor
-│ │ │ ├── _rfs.scss
-│ │ │ ├── _alert.scss
-│ │ │ ├── _breadcrumb.scss
-│ │ │ ├── ... (other vendor files)
-│ │ │
-│ │ ├── bootstrap-grid.scss
-│ │ ├── bootstrap-reboot.scss
-│ │ └── bootstrap.scss
-│ │
-│ └── style.scss
+│   ├── 📂 bootstrap\scss
+│   │   ├── 📂 mixins
+│   │   │   ├── _alert.scss
+│   │   │   ├── _background-variant.scss
+│   │   │   ├── _badge.scss
+│   │   │   ├── _border-radius.scss
+│   │   │   ├── _box-shadow.scss
+│   │   │   └── ... (other mixins)
+│   │   │
+│   │   ├── 📂 utilities
+│   │   │   ├── _align.scss
+│   │   │   ├── _background.scss
+│   │   │   ├── _borders.scss
+│   │   │   └── ... (other utilities)
+│   │   │
+│   │   ├── 📂 vendor
+│   │   │   ├── _rfs.scss
+│   │   │   ├── _alert.scss
+│   │   │   ├── _breadcrumb.scss
+│   │   │   └── ... (other vendor files)
+│   │   │
+│   │   ├── bootstrap-grid.scss
+│   │   ├── bootstrap-reboot.scss
+│   │   └── bootstrap.scss
+│   │
+│   └── style.scss
 │
 ├── about.html
 ├── blog.html
@@ -253,13 +249,6 @@ TRAVENTURE
 
 
 
-## 🐍 Contribution Graph 
-
-<p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="snake animation" />
-</p>  
-
----
 
 <p align="center">  
 ✨ Built with ❤️ by Team <b>Traventure</b> ✨  
