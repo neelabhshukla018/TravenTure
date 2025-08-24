@@ -20,6 +20,15 @@
 
 ---
 
+
+##Some Glimpses of Traventure-
+(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105024.png?raw=true)
+(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105036.png?raw=true)
+(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105049.png?raw=true)
+(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105058.png?raw=true)
+(https://github.com/username/repo/blob/main/Screenshot 2025-08-24 105121.png?raw=true)
+
+
 ## 🚀 Why I Built Traventure  
 
 Last month, I wanted to enjoy my vacation—but I had **no idea** where to go, how to book, what the culture was, or whether I could **trust the sites**.  
@@ -119,7 +128,7 @@ Meet our **expert travel guides** 🌟
 
 📩 For any queries, reach us at: **contact@traventure.com**  
 🔔 Subscribe to our newsletter & never miss travel updates!  
-🌐 Visit us: [Traventure Official Website](https://yourwebsite.com)  
+🌐 Visit us:  [Traventure]https://traventure-toursandtravel.netlify.app/
 
 ---
 
@@ -243,21 +252,8 @@ TRAVENTURE
 └── testimonial.html
 
 
----
 
-## 📊 GitHub Stats  
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=neelabhshukla018&show_icons=true&theme=tokyonight" />
-</p>  
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=neelabhshukla018&theme=tokyonight" />
-</p>  
-
----
-
-## 🐍 Contribution Graph Animation  
+## 🐍 Contribution Graph 
 
 <p align="center">
   <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="snake animation" />
@@ -329,8 +325,7 @@ TRAVENTURE
 
 ---
 
-## 🛠️ Tech Stack  
-
+## 🛠️ Tech Stack
 - **HTML5, CSS3, JavaScript**  
 - **Bootstrap / Tailwind CSS** for responsiveness  
 - **GSAP / AOS** for animations  
@@ -348,16 +343,12 @@ TRAVENTURE
 
 ---
 
-## 📸 Preview (Demo GIF / Screenshot Here)  
 
-*(Add your screenshots or animated demo here)*  
-
----
 
 ## 📬 Contact & Connect  
 
-🌍 Website: [Traventure](https://your-traventure-demo-link.com)  
-📧 Email: support@traventure.com  
+🌍 Website: [Traventure]https://traventure-toursandtravel.netlify.app/
+📧 Email: neelabhshukla79@gmail.com
 🐙 GitHub: [@neelabhshukla018](https://github.com/neelabhshukla018)  
 🔗 LinkedIn: [Neelabh Shukla](www.linkedin.com/in/neelabh-shukla-45b88a2a5)  
 
