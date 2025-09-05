@@ -140,7 +140,7 @@ Meet our **expert travel guides** 🌟
 
 ## 🌐 Tech & Features  
 
-- ⚡ **Frontend**: HTML, CSS, JavaScript  
+- ⚡ **Frontend**: HTML, CSS, JavaScript & BootStrap 
 - 💳 **Payments**: Razorpay Integration  
 - 📝 **Blogs + Guides**: Dynamic blog & grid pages  
 - 📱 **Responsive UI**: Works on desktop, tablet & mobile  
